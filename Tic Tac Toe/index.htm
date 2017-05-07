@@ -1,0 +1,49 @@
+﻿<html>
+    <head>
+        <title>Tic Tac Toe</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/menu.css">
+        <link rel="stylesheet" type="text/css" href="css/game.css">
+    </head>
+    <body>
+        <div id="mainMenu" class="menu">
+            <div data-index="0">Player vs Player</div>
+            <div data-index="1">Player vs Computer</div>
+        </div>
+
+        <div id="overMenu" class="menu">
+            <div data-index="0">Player again</div>            
+            <div data-index="1">Back to main menu</div>            
+        </div>
+
+        <div id="game"> 
+            <div class="name">Tic Tac Toe</div>
+            <div class="tour"></div>
+            <div class="board">
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
+
+                <div class="line"></div>
+            </div>
+        </div>
+
+        <script src="js/mainMenu.js"></script>
+        <script src="js/game.js"></script>
+        <script src="js/overMenu.js"></script>
+        <script>
+            // Init
+            MainMenu.init();
+            OverMenu.init();
+            Game.init();
+        </script>
+    </body>
+</html>

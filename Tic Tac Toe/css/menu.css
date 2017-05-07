@@ -1,0 +1,28 @@
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.menu > div {
+    position: relative;
+    margin: 10px 0px;
+    padding-right: 40px;
+    height: 100px;
+    width: 400px;
+    cursor: pointer;
+    background: #369;
+
+    color: #222;
+    line-height: 100px;
+    text-align: right;
+}
+
+.menu > div:hover {
+    width: 420px;
+    background: #36a;
+}
+
+#overMenu {
+    display: none;
+}
